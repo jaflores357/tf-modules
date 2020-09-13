@@ -9,7 +9,7 @@ module "vpc" {
   private_subnets                        = var.vpc_private_subnets_cidr
   public_subnets                         = var.vpc_public_subnets_cidr
   enable_nat_gateway                     = true
-  single_nat_gateway                     = true
+  single_nat_gateway                     = false
   enable_dns_hostnames                   = true
   //enable_ecr_dkr_endpoint              = true
   //ecr_dkr_endpoint_private_dns_enabled = true
